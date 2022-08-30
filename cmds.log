@@ -1,0 +1,500 @@
+    6  mongod --replSet "rs0" --bind_ip localhost,192.168.1.217
+    7  mongod --config /usr/local/etc/mongod.conf
+    8  mongosh
+    9  mongod
+   10  mongosh
+   11  mongod --bind_ip localhost,My-Example-Associated-Hostname
+   12  mongo 127.0.0.1:27025
+   13  docker pull mongo
+   14  docker ps
+   15  docker-machine create -d virtualbox manager1
+   16  brew install vagrant
+   17  docker-machine create -d virtualbox manager1
+   18  mongod --bind_ip localhost,TestHostname
+   19  git clone https://kimsjsu@github.com/kimsjsu/kimdocker.git
+   20  cd kimdocker
+   21  ./bootstrap-ubuntu.sh
+   22  docker scan
+   23  ./create-containers.sh
+   24  ./setup-replicaset-3nodes.sh
+   25  rs.status()  rs.status() 
+   26  show dbs
+   27  rs.status() show dbs
+   28  mongod --replSet "rs0" --bind_ip localhost,192.168.1.217
+   29  mongod --config /etc/mongod.conf
+   30  docker exec -it mongo-node1 mongo
+   31  docker network create my-mongo-cluster
+   32  docker run --name mongo-node1 -d --net my-mongo-cluster mongo --replSet "rs0"
+   33  docker ps
+   34  docker run --name mongo-node2 -d --net my-mongo-cluster mongo --replSet "rs0"
+   35  docker run --name mongo-node3 -d --net my-mongo-cluster mongo --replSet "rs0"
+   36  docker ps
+   37  docker exec - it node1 mongo
+   38  docker network create my - mongo - cluster
+   39  docker run -- name mongo - node1 - d -- net my - mongo - cluster mongo -- replSet “rs0”
+   40  docker run -- name mongo - node1 - d -- net my - mongo - cluster mongo -- replSet “rs0”
+   41  docker run --name node1 -d --net my-mongo-cluster mongo --replSet "rs0"
+   42  docker run -- name mongo - node1 - d -- net my - mongo - cluster mongo -- replSet “rs0”
+   43  docker run --name node2 -d --net my-mongo-cluster mongo --replSet "rs0"
+   44  docker run --name node3 -d --net my-mongo-cluster mongo --replSet "rs0"
+   45  dorcker ps
+   46  docker ps
+   47  docker exec - it node1 mongo
+   48  docker exec - it node1 mongo
+   49  docker exec - it node1 mongo
+   50  docker exec - it mongo - node1 mongo
+   51  docker exec - it mongodb0.example.net 
+   52  docker exec -it node2 mongo
+   53  docker pull mongo
+   54  docker network create my - mongo - cluster
+   55  docker run -- name mongo - node1 - d -- net my - mongo - cluster mongo -- replSet “rs0”
+   56  docker run -- name mongo.node1 - d -- net my - mongo - cluster mongo -- replSet “rs0”
+   57  docker run --help
+   58  docker ps
+   59  docker run --name node3 -d --net my-mongo-cluster mongo --replSet "rs0"
+   60  docker run --name node2 -d --net my-mongo-cluster mongo --replSet "rs0"
+   61  docker run --name node1 -d --net my-mongo-cluster mongo --replSet "rs0"
+   62  docker ps
+   63  docker run --name node1 -d --net my-mongo-cluster mongo --replSet "rs0"
+   64  docker run --name node2 -d --net my-mongo-cluster mongo --replSet "rs0"
+   65  docker run --name node3 -d --net my-mongo-cluster mongo --replSet "rs0"
+   66  docker ps
+   67  docker exec -it node1 /bin/bash
+   68  docker exec -it node1 mongo
+   69  docker exec -it node2 mongo
+   70  docker exec -it node1 mongo
+   71  docker run --name node1 -d --net my-mongo-cluster mongo --replSet "rs0"
+   72  docker run --name node2 -d --net my-mongo-cluster mongo --replSet "rs0"
+   73  docker network create my-mongo-cluster
+   74  docker run --name node1 -d --net my-mongo-cluster mongo --replSet "rs0"
+   75  docker exec -it node3 mongo
+   76  docker ps
+   77  docker stop e3f1ae8353c0
+   78  docker ps
+   79  docker stop ab2883e54486
+   80  docker ps
+   81  docker start ab2883e54486
+   82  docker ps
+   83  docker stop ab2883e54486
+   84  docker start ab2883e54486
+   85  docker stop ab2883e54486
+   86  git clone https://kimsjsu@github.com/kimsjsu/kimdocker.git
+   87  cd kimdocker
+   88  ./bootstrap-ubuntu.sh
+   89  ./bootstrap-ubuntu.sh
+   90  ./create-containers.sh
+   91  ./setup-replicaset-3nodes.sh
+   92  ./setup-replicaset-3nodes.sh
+   93  docker exec -it node2 mongo
+   94  docker run --name node1 -d --net my-mongo-cluster mongo --replSet "rs0"
+   95  docker run --name node2 -d --net my-mongo-cluster mongo --replSet "rs0"
+   96  docker run --name node3 -d --net my-mongo-cluster mongo --replSet "rs0"
+   97  docker exec -it node1 mongo
+   98  docker exec -it node1 mongo
+   99  docker exec -it node1 mongo
+  100  mongosh localhost:27021
+  101  mongos --configdb config/127.0.0.1:27022 --port 27021  
+  102  mongos --configdb config/127.0.0.1:27022 --port 27021  
+  103  mongosh localhost:27021
+  104  mongos --configdb config/127.0.0.1:27022 --port 27021  
+  105  mongos --configdb config/127.0.0.1:27022 --port 27021  
+  106   mongosh localhost:27021
+  107  mongosh --port 27021
+  108  mongosh localhost:27021
+  109  mongosh localhost:27021
+  110  ra.status() rs.status()
+  111  docker ps
+  112  mongod --shardsvr --replSet a --dbpath a0 --port 26000 --fork --logpath log.a0
+  113  mongos --configdb config/127.0.0.1:27022 --port 27021 
+  114  mongosh localhost:27030
+  115  sh.addShard("a/localhost:26000")
+  116  mongosh --port 26200
+  117  mongosh localhost:27021
+  118  mongos --configdb config/127.0.0.1:27022 --port 27030
+  119  mongosh localhost:27021
+  120  mongosh --port 27022
+  121  mkdir -p /db/config/data
+  122  mongod --port 27022 --dbpath /db/config/data --configsvr --replSet config
+  123  mongos --configdb config/127.0.0.1:27022 --port 27021  
+  124  mongosh --port 26200
+  125  mongosh --port 26100
+  126  mongosh localhost:27021
+  127  mkdir a0 a1 a2
+  128  mkdir a0 a1 a2 b0 b1 b2 c0 c1 c2
+  129  mongod --shardsvr --replSet a --dbpath a0 --port 26000 --fork --logpath log.a0
+  130  $ mongod --shardsvr --replSet a --dbpath a1 --port 26001 --fork --logpath log.a1
+  131  $ mongod --shardsvr --replSet a --dbpath a2 --port 26002 --fork --logpath log.a2 
+  132  $ mongod --shardsvr --replSet b --dbpath b0 --port 26100 --fork --logpath log.b0 
+  133  $ mongod --shardsvr --replSet b --dbpath b1 --port 26101 --fork --logpath log.b1
+  134  $ mongod --shardsvr --replSet b --dbpath b2 --port 26102 --fork --logpath log.b2
+  135  $ mongod --shardsvr --replSet c --dbpath c0 --port 26200 --fork --logpath log.c0
+  136  $ mongod --shardsvr --replSet c --dbpath c1 --port 26201 --fork --logpath log.c1
+  137  $ mongod --shardsvr --replSet c --dbpath c2 --port 26202 --fork --logpath log.c2
+  138  mongod --shardsvr --replSet a --dbpath a1 --port 26001 --fork --logpath log.a1
+  139  mongod --shardsvr --replSet a --dbpath a2 --port 26002 --fork --logpath log.a2 
+  140  mongod --shardsvr --replSet b --dbpath b0 --port 26100 --fork --logpath log.b0 
+  141  mongod --shardsvr --replSet b --dbpath b1 --port 26101 --fork --logpath log.b1
+  142  mongod --shardsvr --replSet b --dbpath b2 --port 26102 --fork --logpath log.b2
+  143  mongod --shardsvr --replSet c --dbpath c0 --port 26200 --fork --logpath log.c0
+  144  mongod --shardsvr --replSet c --dbpath c1 --port 26201 --fork --logpath log.c1
+  145  mongod --shardsvr --replSet c --dbpath c2 --port 26202 --fork --logpath log.c2
+  146  mongosh --port 26000
+  147  mongosh --port 27022
+  148  mkdir -p /db/config/data
+  149  mongod --port 27022 --dbpath /db/config/data --configsvr --replSet config
+  150  mongo --port 26050
+  151  mongod --shardsvr --replSet a --dbpath a0 --port 26000 --fork --logpath lo
+  152  mongod --shardsvr --replSet a --dbpath a0 --port 26000 --fork --logpath log.a0
+  153  mongod --shardsvr --replSet a --dbpath a0 --port 26000 
+  154  mongod --shardsvr --replSet a --dbpath a0 --port 26000 --fork --logpath log.a0
+  155  mongod --shardsvr --replSet a --dbpath a1 --port 26001 --fork --logpath log.a1
+  156  mongod --shardsvr --replSet d --dbpath d0 --port 25000 --fork --logpath log.d0
+  157  mkdir a0 a1 a2 b0 b1 b2 c0 c1 c2
+  158  mongod --shardsvr --replSet a --dbpath a0 --port 26000 --fork --logpath log.a0
+  159  mongod --shardsvr --replSet a --dbpath a1 --port 26001 --fork --logpath log.a1
+  160  ps -ef | grep mongod|grep a0
+  161  mongo --port 26000
+  162  mongo --port 26000
+  163  mongo --port 26061
+  164  mongo --port 26061
+  165  mong --port 26000
+  166  mongo --port 26000
+  167  mongos --configdb "cfg/localhost:26050,localhost:26051,localhost:26052" --fork --logpath log.mongos1 --port 26061
+  168  mongos --configdb "cfg/localhost:26050,localhost:26051,localhost:26052" --fork --logpath log.mongos2 --port 26062
+  169  mongos --configdb "cfg/localhost:26050,localhost:26051,localhost:26052" --fork --logpath log.mongos3 --port 26063
+  170  ls
+  171  mongo --port 26061
+  172  mongo --port 26061
+  173  mongo --port 26061
+  174  mongo --port 26000
+  175  mongo --port 26062
+  176  sudo rm /var/lib/mongodb/mongod.lock
+  177  sudo rm /var/lib/mongodb/mongod.lock
+  178  sudo mongod --dbpath /var/lib/mongodb/ --repair
+  179  sudo mongod --dbpath /var/lib/mongodb/ --journal
+  180  mongo --port 26022
+  181  mongo --port 26021
+  182  mongo --port 26062
+  183  mongo --port 26061
+  184  mongo --port 26060
+  185  mongo --port 26062
+  186  ls
+  187  mongo --port 26000
+  188  mongo --port 26062
+  189  mongo --port 26060
+  190  mongo --port 26050
+  191  mongos --port 26063
+  192  mongo --port 26063
+  193  mongosh localhost:26100
+  194  mongosh localhost:26000 
+  195  mkdir cfg0 cfg1 cfg2
+  196  mkdir a0 a1 a2 b0 b1 b2 c0 c1 c2
+  197  ls -l
+  198  mongod --configsvr --dbpath cfg0 --port 26050 --fork --logpath log.cfg0 --replSet cfg
+  199  mongod --configsvr --dbpath cfg1 --port 26051 --fork --logpath log.cfg1 --replSet cfg
+  200  mongod --configsvr --dbpath cfg2 --port 26052 --fork --logpath log.cfg2 --replSet cfg
+  201  chmod 600 Downloads/dupair.pem
+  202  ssh -i Downloads/dupair.pem ubuntu@3.235.17.145
+  203  00~chmod 600 Downloads/dupair.pem01~
+  204  00~chmod 600 Downloads/dupair.pem
+  205  exit
+  206  chmod 600 Downloads/dupair.pem
+  207  ssh -i Downloads/dupair.pem ubuntu@44.193.30.103
+  208  chmod 600 Downloads/dupair.pem
+  209  ssh -i Downloads/dupair.pem ubuntu@44.193.30.103
+  210  chmod 600 Downloads/dupair.pem
+  211  ssh -i Downloads/dupair.pem ubuntu@34.200.237.115
+  212  chmod 600 Downloads/dupair.pem
+  213  ssh -i Downloads/dupair.pem ubuntu@44.193.11.69
+  214  connect
+  215  chmod 600 Downloads/dupair.pem
+  216  ssh -i Downloads/dupair.pem ubuntu@3.221.149.118
+  217  chmod 600 Downloads/dupair.pem
+  218  ssh -i Downloads/dupair.pem ubuntu@44.193.30.103
+  219  chmod 600 Downloads/dupair.pem
+  220  ssh -i Downloads/dupair.pem ubuntu@54.237.141.67
+  221  chmod 600 Downloads/dupair.pem
+  222  ssh -i Downloads/dupair.pem ubuntu@3.221.149.118
+  223  mongosh
+  224  brew tap mongodb/brew
+  225  brew update
+  226  brew install mongodb-community@6.0
+  227  brew services start mongodb-community@6.0
+  228  chmod 600 Downloads/dupair.pem
+  229  ssh -i Downloads/dupair.pem ubuntu@3.86.100.165 
+  230  chmod 600 Downloads/dupair.pem
+  231  ssh -i Downloads/dupair.pem ubuntu@54.166.178.81
+  232  chmod 600 Downloads/dupair.pem
+  233  ssh -i Downloads/dupair.pem ubuntu@54.166.178.81
+  234  chmod 600 Downloads/dupair.pem
+  235  ssh -i Downloads/dupair.pem ubuntu@54.166.178.81
+  236  mongosh
+  237  mongosh
+  238  chmod 600 Downloads/dupair.pem
+  239  ssh -i Downloads/dupair.pem ubuntu@3.221.149.118
+  240  chmod 600 Downloads/dupair.pem
+  241  ssh -i Downloads/dupair.pem ubuntu@54.89.250.41
+  242  mkdir -p /data/db
+  243  chmod 600 Downloads/dupair.pem
+  244  ssh -i Downloads/dupair.pem ubuntu@i-0d04e7b32b84f4e94
+  245  ssh -i Downloads/dupair.pem ubuntu@54.89.250.41
+  246  mongo -port 27019
+  247  chmod 600 Downloads/dupair.pem
+  248  ssh -i Downloads/dupair.pem ubuntu@44.202.27.192
+  249  chmod 600 Downloads/dupair.pem
+  250  ssh -i Downloads/dupair.pem ubuntu@44.202.27.192
+  251  exit
+  252  chmod 600 Downloads/dupair.pem
+  253  ssh -i Downloads/dupair.pem ubuntu@54.210.82.54
+  254  chmod 600 Downloads/dupair.pem
+  255  ssh -i Downloads/dupair.pem ubuntu@54.172.67.229
+  256  chmod 600 Downloads/dupair.pem
+  257  ssh -i Downloads/dupair.pem ubuntu@54.210.82.54
+  258  chmod 600 Downloads/dupair.pem
+  259  ssh -i Downloads/dupair.pem ubuntu@18.212.163.220
+  260  mongosh
+  261  chmod 600 Downloads/dupair.pem
+  262  ssh -i Downloads/dupair.pem ubuntu@54.172.67.229
+  263  chmod 600 Downloads/dupair.pem
+  264  ssh -i Downloads/dupair.pem ubuntu@54.210.82.54
+  265  ssh ec2-user@3.83.150.49
+  266  ssh ec2-user@3.83.150.49
+  267  ssh ec2-user@3.83.150.49 -i dupair.pem
+  268  chmod 400 Downloads/dupair.pem
+  269  ssh ec2-user@3.83.150.49 -i dupair.pem
+  270  chmod 400 Downloads/dupair.pem
+  271  ssh -i Downloads/dupair.pem ec2-user@ec2-3-83-150-49.compute-1.amazonaws.com
+  272  chmod 400 Downloads/dupair.pem
+  273  ssh ec2-user@3.83.150.49 -i Downloads/dupair.pem
+  274  chmod 400 dupair.pem
+  275  chmod 400 Downloads/dupair.pem
+  276  ec2-3-83-150-49.compute-1.amazonaws.com
+  277  ssh -i "dupair.pem" ec2-user@ec2-3-83-150-49.compute-1.amazonaws.com
+  278  chmod 600 Downloads/dupair.pem
+  279  ssh -i Downloads/dupair.pem ubuntu@54.161.232.143
+  280  chmod 600 Downloads/dupair.pem
+  281  ssh -i Downloads/dupair.pem ubuntu@3.95.225.52 
+  282  chmod 600 Downloads/dupair.pem
+  283  ssh -i Downloads/dupair.pem ubuntu@54.173.121.4
+  284  chmod 600 Downloads/dupair.pem
+  285  ssh -i Downloads/dupair.pem ubuntu@184.72.122.91
+  286  chmod 600 Downloads/dupair.pem
+  287  ssh -i Downloads/dupair.pem ubuntu@184.72.122.91
+  288  chmod 600 Downloads/dupair.pem
+  289  ssh -i Downloads/dupair.pem ubuntu@184.72.122.91
+  290  ssh -i Downloads/dupair.pem ubuntu@184.72.122.91
+  291  chmod 600 Downloads/dupair.pem
+  292  ssh -i Downloads/dupair.pem ubuntu@184.72.122.91
+  293  chmod 400 Downloads/dupair.pem
+  294  ssh -i Downloads/dupair.pem ubuntu@18.212.172.139 
+  295  ssh -i Downloads/dupair.pem ubuntu@34.239.122.227 
+  296  chmod 600 Downloads/dupair.pem
+  297  ssh -i Downloads/dupair.pem ubuntu@3.91.155.214
+  298  chmod 600 Downloads/dupair.pem
+  299  ssh -i Downloads/dupair.pem ubuntu@44.204.150.103
+  300  chmod 600 Downloads/dupair.pem
+  301   ssh -i Downloads/dupair.pem ubuntu@44.204.150.103
+  302  chmod 600 Downloads/dupair.pem
+  303  ssh -i Downloads/dupair.pem ubuntu@3.91.155.214 
+  304  chmod 600 Downloads/dupair.pem
+  305  ssh -i Downloads/dupair.pem ubuntu@3.91.155.214 
+  306  chmod 600 Downloads/dupair.pem
+  307  ssh -i Downloads/dupair.pem ubuntu@3.91.155.214 
+  308  ssh -i Downloads/dupair.pem ubuntu@3.91.155.214
+  309  chmod 600 Downloads/dupair.pem
+  310  ssh -i Downloads/dupair.pem ubuntu@18.212.163.220  
+  311  git clone https://kimsjsu@github.com/kimsjsu/kimdocker.git
+  312  cd kimdocker
+  313  ./bootstrap-ubuntu.sh
+  314  ./create-containers.sh
+  315  ./setup-replicaset-3nodes.sh
+  316  ./bootstrap-ubuntu.sh
+  317  ./create-containers.sh
+  318  ./setup-replicaset-3nodes.sh
+  319  chmod 600 Downloads/dupair.pem
+  320  ssh -i Downloads/dupair.pem ubuntu@54.89.250.41
+  321  chmod 600 Downloads/dupair.pem
+  322  ssh -i Downloads/dupair.pem ubuntu@54.89.250.41
+  323  mongosh
+  324  mongo
+  325  chmod 600 Downloads/dupair.pem
+  326  ssh -i Downloads/dupair.pem ubuntu@3.80.200.95
+  327  chmod 600 Downloads/dupair.pem
+  328  ssh -i Downloads/dupair.pem ubuntu@3.80.200.95
+  329  ssh -i Downloads/dupair.pem ubuntu@3.80.200.95
+  330  chmod 600 Downloads/dupair.pem
+  331  ssh -i Downloads/dupair.pem ubuntu@3.80.200.95
+  332  chmod 600 Downloads/dupair.pem
+  333  wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
+  334  ssh -i Downloads/dupair.pem ubuntu@3.85.172.125
+  335  chmod 600 Downloads/dupair.pem
+  336  ssh -i Downloads/dupair.pem ubuntu@3.85.172.125
+  337  chmod 600 Downloads/dupair.pem
+  338  ssh -i Downloads/dupair.pem ubuntu@184.72.122.91
+  339  chmod 600 Downloads/dupair.pem
+  340  ssh -i Downloads/dupair.pem ubuntu@3.80.200.95
+  341  chmod 600 Downloads/dupair.pem
+  342  ssh -i Downloads/dupair.pem ubuntu@3.85.172.125
+  343  $ mongod --shardsvr --replSet a --dbpath a2 --port 26002 --fork --logpath log.a2 
+  344  wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
+  345  chmod 600 Downloads/dupair.pem
+  346  ssh -i Downloads/dupair.pem ubuntu@184.72.122.91
+  347  chmod 600 Downloads/dupair.pem
+  348  ssh -i Downloads/dupair.pem ubuntu@3.85.172.125
+  349  chmod 600 Downloads/dupair.pemssh -i Downloads/dupair.pem ubuntu@3.80.200.95
+  350  wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
+  351  chmod 600 Downloads/dupair.pem
+  352  ssh -i Downloads/dupair.pem ubuntu@3.80.200.95
+  353  mongosh
+  354  mongosh -u mongo_db_admin -p --authenticationDatabase admin
+  355  ssh ip-172-31-91-128.ec2.internal
+  356  ssh -i ip-172-31-91-128.ec2.internal
+  357  chmod 600 Downloads/dupair.pem
+  358  ssh -i Downloads/dupair.pem ubuntu@52.70.165.107
+  359  mkdir -p /db/config/data
+  360   mongod --port 27022 --dbpath /db/config/data --configsvr --replSet config
+  361  mongosh --port 27022
+  362  chmod 400 dupair.pem
+  363  ssh -i "dupair.pem" ubuntu@3.86.145.95
+  364  chmod 600 Downloads/mongoserver.pem
+  365  ssh -i Downloads/dupair.pem ubuntu@34.239.110.224
+  366  chmod 600 Downloads/dupair.pem
+  367  ssh -i Downloads/dupair.pem ubuntu@44.206.226.184
+  368  chmod 600 Downloads/dupair.pem
+  369  ssh -i Downloads/dupair.pem ubuntu@3.87.64.114 
+  370  chmod 600 Downloads/dupair.pem
+  371  ssh -i Downloads/dupair.pem ubuntu@44.206.247.11
+  372  chmod 600 Downloads/dupair.pem
+  373  ssh -i Downloads/dupair.pem ubuntu@54.234.160.216
+  374  chmod 600 Downloads/dupair.pem
+  375  ssh -i Downloads/dupair.pem ubuntu@3.86.191.154
+  376  chmod 600 Downloads/dupair.pem
+  377  ssh -i Downloads/dupair.pem ubuntu@54.172.67.187
+  378  chmod 600 Downloads/dupair.pem
+  379  ssh -i Downloads/dupair.pem ubuntu@44.202.119.41
+  380  chmod 600 Downloads/dupair.pem
+  381  ssh -i Downloads/dupair.pem ubuntu@54.172.67.187
+  382  chmod 600 Downloads/dupair.pem
+  383  ssh -i Downloads/dupair.pem ubuntu@44.202.119.41
+  384  chmod 600 Downloads/dupair.pem
+  385  ssh -i Downloads/dupair.pem ubuntu@
+  386  chmod 600 Downloads/dupair.pem
+  387  ssh -i Downloads/dupair.pem ubuntu@44.202.119.41
+  388  chmod 600 Downloads/dupair.pem
+  389  ssh -i Downloads/dupair.pem ubuntu@44.202.119.41
+  390  chmod 600 Downloads/dupair.pem
+  391  ssh -i Downloads/dupair.pem ubuntu@44.202.119.41
+  392  brew tap mongodb/brew
+  393  brew update
+  394  brew install mongodb-community@6.0
+  395  brew services start mongodb-community@6.0
+  396  mkdir -p /db/config/data
+  397  mkdir a0 a1 a2 b0 b1 b2 c0 c1 c2
+  398  mongod --shardsvr --replSet a --dbpath a0 --port 27017 --fork --logpath log.a0
+  399   mongod --shardsvr --replSet a --dbpath a0 --port 27017
+  400  mongosh
+  401  mongosh -port 27017
+  402  chmod 600 Downloads/dupair.pem
+  403  ssh -i Downloads/dupair.pem ubuntu@54.172.67.187
+  404  chmod 600 Downloads/dupair.pem
+  405  ssh -i Downloads/dupair.pem ubuntu@3.86.191.154
+  406  chmod 600 Downloads/dupair.pem
+  407  ssh -i Downloads/dupair.pem ubuntu@54.161.147.122
+  408  chmod 600 Downloads/dupair.pem
+  409  ssh -i Downloads/dupair.pem ubuntu@54.161.147.122
+  410  chmod 600 Downloads/dupair.pem
+  411  ssh -i Downloads/dupair.pem ubuntu@18.212.41.33
+  412  chmod 600 Downloads/dupair.pem
+  413  ssh -i Downloads/dupair.pem ubuntu@18.212.41.33
+  414  chmod 600 Downloads/dupair.pem
+  415  ssh -i Downloads/dupair.pem ubuntu@44.202.119.41
+  416  openssl rand -base64 756 > <path-to-keyfile>
+  417  chmod 400 <path-to-keyfile>
+  418  chmod 600 Downloads/dupair.pem
+  419  ssh -i Downloads/dupair.pem ubuntu@3.83.124.100
+  420  chmod 600 Downloads/dupair.pem
+  421  ssh -i Downloads/dupair.pem ubuntu@3.83.124.100
+  422  ssh -i Downloads/dupair.pem ubuntu@3.83.124.100
+  423  ssh -i Downloads/dupair.pem ubuntu@3.83.124.100
+  424  chmod 400 dupair.pem
+  425  chmod 400 dupair.pem
+  426  chmod 600 Downloads/dupair.pem
+  427  ssh -i "dupair.pem" ubuntu@ec2-3-82-215-197.compute-1.amazonaws.com
+  428  ssh -i Downloads/dupair.pem ubuntu@3.82.215.197
+  429  chmod 400 dupair.pem
+  430  chmod 600 Downloads/dupair.pem
+  431  ssh -i Downloads/dupair.pem ubuntu@44.202.114.62
+  432  chmod 600 Downloads/dupair.pem
+  433  ssh -i Downloads/dupair.pem ubuntu@3.82.215.197
+  434  chmod 600 Downloads/dupair.pem
+  435  ssh -i Downloads/dupair.pem ubuntu@44.202.114.62
+  436  mongosh
+  437  mongod --dbpath /data/db --replSet <replName>
+  438  mongodb -version
+  439  mongosh
+  440  mongosh
+  441  mongosh mongodb://44.193.181.226:27018
+  442  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  443  python --version
+  444  brew install python@2
+  445  python --version
+  446  brew install python2
+  447  brew install python
+  448  python version
+  449  python --version
+  450  python --version
+  451  brew install python
+  452  brew link python@3.9
+  453  python --version
+  454  pip install --upgrade pip setuptolls
+  455  brew install python
+  456  brew link python@3.9
+  457  python --version
+  458  pip --version
+  459  $ python -m ensurepip --upgrade
+  460  python --version
+  461  /Applications/Python\ 3.10/Install\ Certificates.command ; exit;
+  462  /Applications/Python\ 3.10/Update\ Shell\ Profile.command ; exit;
+  463  pip --version
+  464  python --version
+  465  pyhton 3
+  466  python3
+  467  nano ~/.zshrc
+  468  python
+  469  python3
+  470  mongosh mongodb://44.193.181.226:27018
+  471  wget  http://media.mongodb.org/zips.json
+  472   wget http://media.mongodb.org/zips.json
+  473  gedit cassandra.yaml
+  474  cd cassandra.yaml
+  475  cassandra.yaml
+  476  cd usr/local/etc/cassandra
+  477  /etc/cassandra/cassandra.yaml
+  478  brew install cassandra
+  479  ls
+  480  open ~/usr/local/etc/cassandra
+  481  find / -name cassandra.yaml
+  482  open ~/usr/local/etc/cassandra/cassandra.yaml
+  483  open ~/usr/local/etc/cassandra/cassandra.yaml
+  484  cqlsh
+  485  cqlsh
+  486  cassandra -f
+  487  ssh guoman@172.31.197.164
+  488  ssh guoman@172.31.197.164
+  489  % ping 172.31.197.164
+  490  ssh guoman@172.31.197.164
+  491  sudo su -
+  492  sudo ufw allow 22/tcp
+  493  ssh ssh login@172.31.197.164
+  494  ssh login@172.31.197.164
+  495  ssh guoman@172.31.197.164
+  496  sudo -i
+  497  ping 172.31.197.164
+  498  ssh guoman@172.31.197.164
+  499  ping 172.31.197.164
+  500  ping 172.31.197.164
+  501  git --version
+  502  cd ~/Desktop
+  503  mkdir worksheet1
+  504  cd worksheet1/
+  505  history > cmds.log
